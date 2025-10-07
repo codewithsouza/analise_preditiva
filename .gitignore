@@ -1,0 +1,65 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Dados
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.parquet
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.parquet
+data/external/*.csv
+data/external/*.xlsx
+data/external/*.parquet
+data/raw/Sales_Data/*.csv
+
+# Exce├º├╡es (manter estrutura de diret├│rios)
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Relat├│rios tempor├írios
+reports/temp/
+
+# Modelos treinados
+*.pkl
+*.joblib
+*.h5
+*.pth
+
+# Logs
+*.log
+logs/
+
+# Configura├º├╡es locais
+.env
+config/local.yml
+

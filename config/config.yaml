@@ -1,0 +1,96 @@
+﻿# Configura├º├úo do Projeto de An├ílise Preditiva
+
+# Caminhos dos dados
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  external_data: "data/external"
+  models: "models"
+  reports: "reports"
+  figures: "reports/figures"
+  
+  # Arquivos espec├¡ficos
+  ecommerce_file: "data/raw/Updated_sales.csv"
+  retail_file: "data/raw/Retail and wherehouse Sale.csv"
+  sales_data_dir: "data/raw/Sales_Data"
+
+# Configura├º├╡es de leitura de dados
+data_loading:
+  encoding: "utf-8"
+  alternative_encoding: "latin-1"
+  na_values: ["", "NA", "NaN", "null", "-"]
+  date_format: "%m/%d/%y"
+  dayfirst: false
+  
+# Configura├º├╡es de processamento
+processing:
+  remove_duplicates: true
+  handle_missing: true
+  missing_threshold: 0.5  # Remove colunas com >50% de dados faltantes
+  outlier_method: "iqr"   # iqr, zscore, isolation_forest
+  outlier_threshold: 3.0
+  
+# Feature Engineering
+features:
+  temporal:
+    - year
+    - month
+    - day
+    - hour
+    - day_of_week
+    - is_weekend
+    - quarter
+  
+  geographic:
+    - city
+    - state
+    - zip_code
+    - region
+  
+  derived:
+    - revenue
+    - avg_price
+    - total_quantity
+    - transaction_count
+
+# Modelagem
+modeling:
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+  cv_folds: 5
+  
+  # Modelos a testar
+  models:
+    - baseline
+    - arima
+    - prophet
+    - random_forest
+    - xgboost
+    - lightgbm
+  
+  # Hiperpar├ómetros
+  hyperparameters:
+    random_forest:
+      n_estimators: [100, 200, 300]
+      max_depth: [10, 20, 30, null]
+    
+    xgboost:
+      n_estimators: [100, 200]
+      learning_rate: [0.01, 0.1]
+      max_depth: [3, 5, 7]
+
+# Visualiza├º├úo
+visualization:
+  style: "seaborn"
+  palette: "husl"
+  figure_size: [12, 6]
+  dpi: 100
+  save_format: "png"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/pipeline.log"
+

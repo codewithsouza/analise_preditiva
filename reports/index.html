@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An├ílise Preditiva E-commerce - Dashboard Central</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .dashboard-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .card-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .card-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+        
+        .card-link:hover {
+            transform: scale(1.05);
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .info-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            padding: 15px;
+            background: #f7f7f7;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>≡ƒôè An├ílise Preditiva E-commerce</h1>
+            <p class="subtitle">Dashboards Interativos e Visualiza├º├╡es</p>
+        </header>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card" onclick="window.open('dashboard_vendas.html', '_blank')">
+                <div class="card-icon">≡ƒôê</div>
+                <h3 class="card-title">Dashboard de Vendas</h3>
+                <p class="card-description">
+                    An├ílise completa das vendas hist├│ricas com evolu├º├úo mensal, 
+                    top produtos, vendas por cidade, hora e dia da semana.
+                </p>
+                <a href="dashboard_vendas.html" class="card-link" target="_blank">Abrir Dashboard</a>
+            </div>
+            
+            <div class="dashboard-card" onclick="window.open('dashboard_previsoes.html', '_blank')">
+                <div class="card-icon">≡ƒö«</div>
+                <h3 class="card-title">Dashboard de Previs├╡es</h3>
+                <p class="card-description">
+                    Previs├╡es dos modelos Random Forest e SARIMA para os pr├│ximos meses,
+                    com m├⌐tricas de desempenho e intervalos de confian├ºa.
+                </p>
+                <a href="dashboard_previsoes.html" class="card-link" target="_blank">Abrir Dashboard</a>
+            </div>
+            
+            <div class="dashboard-card" onclick="window.open('dashboard_produtos.html', '_blank')">
+                <div class="card-icon">≡ƒÅå</div>
+                <h3 class="card-title">Dashboard de Produtos</h3>
+                <p class="card-description">
+                    Visualiza├º├úo treemap interativa da distribui├º├úo de receita
+                    por produto e cidade. Explore hierarquicamente os dados.
+                </p>
+                <a href="dashboard_produtos.html" class="card-link" target="_blank">Abrir Dashboard</a>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Γ£¿ Recursos Interativos</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-title">≡ƒöì Zoom Interativo</div>
+                    <div class="feature-desc">Clique e arraste para dar zoom em ├íreas espec├¡ficas</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒô¥ Detalhes ao Passar o Mouse</div>
+                    <div class="feature-desc">Veja valores exatos passando o mouse sobre os gr├íficos</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒô╕ Exportar Imagens</div>
+                    <div class="feature-desc">Bot├úo de c├ómera para salvar gr├íficos como PNG</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒÄ¿ Gr├íficos Responsivos</div>
+                    <div class="feature-desc">Visualiza├º├╡es se adaptam ao tamanho da tela</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒöä Reset e Pan</div>
+                    <div class="feature-desc">Ferramentas para resetar view e navegar pelos dados</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒôè M├║ltiplas Visualiza├º├╡es</div>
+                    <div class="feature-desc">Mais de 10 tipos diferentes de gr├íficos</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>≡ƒôü Outros Recursos Dispon├¡veis</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-title">≡ƒôô Jupyter Notebooks</div>
+                    <div class="feature-desc">notebooks/01_exploracao/ e notebooks/04_modelagem/</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒôè Arquivos Excel</div>
+                    <div class="feature-desc">data/processed/*.xlsx e *.csv</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-title">≡ƒôê Gr├íficos PNG</div>
+                    <div class="feature-desc">reports/figures/*.png</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>≡ƒÆí Dica: Use os controles no canto superior direito de cada gr├ífico para interagir</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Gerado automaticamente por dashboard.py</p>
+        </footer>
+    </div>
+</body>
+</html>
+

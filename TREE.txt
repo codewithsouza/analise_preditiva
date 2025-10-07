@@ -1,0 +1,134 @@
+﻿ESTRUTURA COMPLETA DO PROJETO
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+≡ƒôü analise preditiva/
+Γöé
+Γö£ΓöÇΓöÇ ≡ƒôä README.md                    ΓåÉ Comece por aqui! Documenta├º├úo principal
+Γö£ΓöÇΓöÇ ≡ƒôä QUICK_START.md               ΓåÉ Guia r├ípido de 5 minutos
+Γö£ΓöÇΓöÇ ≡ƒôä STRUCTURE.md                 ΓåÉ Explica├º├úo detalhada da estrutura
+Γö£ΓöÇΓöÇ ≡ƒôä PROJECT_SUMMARY.md           ΓåÉ Resumo e status do projeto
+Γö£ΓöÇΓöÇ ≡ƒôä CONTRIBUTING.md              ΓåÉ Guia de contribui├º├úo
+Γö£ΓöÇΓöÇ ≡ƒôä CHANGELOG.md                 ΓåÉ Hist├│rico de mudan├ºas
+Γö£ΓöÇΓöÇ ≡ƒôä LICENSE                      ΓåÉ Licen├ºa MIT
+Γö£ΓöÇΓöÇ ≡ƒôä requirements.txt             ΓåÉ Depend├¬ncias Python
+Γö£ΓöÇΓöÇ ≡ƒôä setup.py                     ΓåÉ Configura├º├úo do pacote
+Γö£ΓöÇΓöÇ ≡ƒôä Makefile                     ΓåÉ Comandos ├║teis
+Γö£ΓöÇΓöÇ ≡ƒôä .gitignore                   ΓåÉ Arquivos ignorados pelo Git
+Γöé
+Γö£ΓöÇΓöÇ ≡ƒôü data/                        ΓåÉ DADOS DO PROJETO
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü raw/                     ΓåÉ Dados originais (n├úo modificar!)
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä README.md            ΓåÉ Instru├º├╡es sobre dados brutos
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä .gitkeep
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä Updated_sales.csv                    (ΓÅ│ Voc├¬ deve adicionar)
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä Retail and wherehouse Sale.csv       (ΓÅ│ Voc├¬ deve adicionar)
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôü Sales_Data/          ΓåÉ CSVs mensais  (ΓÅ│ Voc├¬ deve adicionar)
+Γöé   Γöé
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü processed/               ΓåÉ Dados limpos e processados
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôä .gitkeep
+Γöé   Γöé
+Γöé   ΓööΓöÇΓöÇ ≡ƒôü external/                ΓåÉ Dados externos complementares
+Γöé       ΓööΓöÇΓöÇ ≡ƒôä .gitkeep
+Γöé
+Γö£ΓöÇΓöÇ ≡ƒôü notebooks/                   ΓåÉ JUPYTER NOTEBOOKS
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü 01_exploracao/           ΓåÉ An├ílise explorat├│ria
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôô ecommerce_eda.ipynb  ΓåÉ Template pronto!
+Γöé   Γöé
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü 02_limpeza/              ΓåÉ Limpeza de dados
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü 03_feature_engineering/  ΓåÉ Cria├º├úo de features
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé
+Γöé   ΓööΓöÇΓöÇ ≡ƒôü 04_modelagem/            ΓåÉ Modelos preditivos
+Γöé       ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé
+Γö£ΓöÇΓöÇ ≡ƒôü src/                         ΓåÉ C├ôDIGO FONTE REUTILIZ├üVEL
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôä __init__.py
+Γöé   Γöé
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü data/                    ΓåÉ Scripts de carregamento
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä __init__.py
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒÉì load_ecommerce.py   ΓåÉ Carrega Updated_sales.csv
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒÉì load_retail.py      ΓåÉ Carrega Retail and wherehouse.csv
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒÉì load_sales_data.py  ΓåÉ Carrega Sales_Data/
+Γöé   Γöé
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü features/                ΓåÉ Feature engineering
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä __init__.py
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒÉì build_features.py
+Γöé   Γöé
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü models/                  ΓåÉ Modelos preditivos
+Γöé   Γöé   Γö£ΓöÇΓöÇ ≡ƒôä __init__.py
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé
+Γöé   ΓööΓöÇΓöÇ ≡ƒôü visualization/           ΓåÉ Visualiza├º├╡es
+Γöé       Γö£ΓöÇΓöÇ ≡ƒôä __init__.py
+Γöé       ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé
+Γö£ΓöÇΓöÇ ≡ƒôü reports/                     ΓåÉ RESULTADOS E RELAT├ôRIOS
+Γöé   Γö£ΓöÇΓöÇ ≡ƒôü figures/                 ΓåÉ Gr├íficos exportados
+Γöé   Γöé   ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé   Γöé
+Γöé   ΓööΓöÇΓöÇ ≡ƒôü insights/                ΓåÉ Documenta├º├úo de descobertas
+Γöé       ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé
+Γö£ΓöÇΓöÇ ≡ƒôü tests/                       ΓåÉ TESTES AUTOMATIZADOS
+Γöé   ΓööΓöÇΓöÇ ≡ƒôä README.md
+Γöé
+ΓööΓöÇΓöÇ ≡ƒôü config/                      ΓåÉ CONFIGURA├ç├òES
+    ΓööΓöÇΓöÇ ≡ƒôä config.yaml              ΓåÉ Configura├º├╡es do projeto
+
+
+LEGENDA
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+≡ƒôä = Arquivo de documenta├º├úo/configura├º├úo
+≡ƒôü = Diret├│rio
+≡ƒÉì = Script Python
+≡ƒôô = Jupyter Notebook
+ΓÅ│ = Pendente (voc├¬ deve adicionar)
+
+
+COMANDOS R├üPIDOS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+Instalar depend├¬ncias:
+  pip install -r requirements.txt
+
+Iniciar Jupyter:
+  jupyter notebook
+
+Executar testes:
+  pytest tests/
+
+Ver comandos dispon├¡veis:
+  make help
+
+
+FLUXO DE TRABALHO
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+1. Colocar CSVs em data/raw/
+2. Explorar com notebooks/01_exploracao/
+3. Limpar com notebooks/02_limpeza/
+4. Criar features com notebooks/03_feature_engineering/
+5. Modelar com notebooks/04_modelagem/
+
+
+PR├ôXIMOS PASSOS IMEDIATOS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+Γûí Ler QUICK_START.md
+Γûí Adicionar arquivos CSV em data/raw/
+Γûí Criar ambiente virtual (python -m venv venv)
+Γûí Instalar depend├¬ncias (pip install -r requirements.txt)
+Γûí Abrir notebook template (notebooks/01_exploracao/ecommerce_eda.ipynb)
+Γûí Come├ºar an├ílise explorat├│ria!
+
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+Projeto criado em: 06/10/2025
+Vers├úo: 0.1.0
+Status: ≡ƒƒí Estrutura completa - Pronto para desenvolvimento
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
